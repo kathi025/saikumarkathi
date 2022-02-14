@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 
 //Hooks is a functional based object and it is only used inside the function.
-//react 16.7 - hooks
 //useState, useEffect, useMemo, useCallback, useReducer,
 //useLayoutEffect, useContext, useRef..
 
