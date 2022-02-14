@@ -1,0 +1,44 @@
+import React, {useState} from 'react';
+
+//Hooks is a functional based object and it is only used inside the function.
+//react 16.7 - hooks
+//useState, useEffect, useMemo, useCallback, useReducer,
+//useLayoutEffect, useContext, useRef..
+
+function Hooks  ()  {
+const [title, setTitle] = useState("sumsangF41")
+const [publisher, setPublisher] = useState("sumsang")
+const [price, setPrice] = useState("15000")
+
+const [phone, setPhone] = useState({
+    title : "Iphone12x",
+    publisher : "Apple",
+    price : "100000",
+
+})
+
+const [laptop, setLaptop] = useState({
+    title : "Dell 11th generation",
+    pub : "Dell",
+    price : "75000",
+})
+  return (
+    <div>
+        <div style={{border : "5px solid green"}}>{title}
+        <p>{publisher}</p>
+        <p>{price}</p>
+        </div>
+        <br />
+        <div style={{border : "5px solid red"}}>{phone.title}
+        <p>{phone.publisher}</p>
+        <p>{phone.price}</p>
+        </div>
+        <br />
+        <div style={{border : "5px solid blue"}}>{laptop.title}
+        <p>{laptop.pub}</p>
+        <p>{laptop.price}</p>
+        </div>
+    </div>
+  )
+}
+export default Hooks;
